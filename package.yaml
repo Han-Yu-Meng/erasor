@@ -1,0 +1,31 @@
+name: "erasor"
+version: "0.1.0"
+description: "ERASOR: Egocentric Ratio of Pseudo Occupancy-based Dynamic Object Removal for Static 3D Point Cloud Map Building"
+maintainers:
+  - name: "HuajieWu"
+    email: "wu2020@connect.hku.hk"
+  - name: "YihangLi"
+    email: "yhangli@connect.hku.hk"
+depends:
+  Eigen3: "3.4.0"
+  OpenMP: "system"
+  
+  geometry_msgs: "system"
+  nav_msgs: "system"
+  sensor_msgs: "system"
+  tf2_eigen: "system"
+
+  PCL: "system"
+  pcl_conversions: "system"
+  livox_msg: "1.0.1"
+
+recipes:
+  livox_msg:
+    git: "https://github.com/Han-Yu-Meng/livox_msg.git"
+    build_system: "cmake"
+    versions:
+      "1.0.1":
+        tag: "v1.0.1"
+
+licenses:
+  - "GNUv2"
